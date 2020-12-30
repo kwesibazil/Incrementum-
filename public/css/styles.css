@@ -1,0 +1,43 @@
+body{
+  min-width: 320px;
+}
+#company-logo, #current-date{
+  font-size: .90rem;
+}
+#current-date{
+  color:#30C3CD;
+}
+
+
+div.hover-nav-icons a span{
+  font-size: .70rem;
+}
+
+
+.nav-icons svg{
+  fill:#FF914D;
+}
+
+.hover-nav-icons:hover a svg,
+.hover-nav-icons:focus a svg,
+.hover-nav-icons:active a svg  
+{
+  fill:  #30C3CD;
+}
+
+
+nav div.nav-icons svg.hvr-grow:hover{
+  /*fill:  #30C3CD;*/
+  width: 20px;
+  height: 20px;
+}
+
+
+.no-glow{
+  box-shadow:none !important; 
+  outline:​0px !important; 
+}
+header nav input.no-glow:focus{
+  border: 1px solid #FF914D;
+}
+

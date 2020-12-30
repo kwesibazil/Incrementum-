@@ -1,0 +1,17 @@
+{
+  "name": "incrementum",
+  "version": "1.0.0",
+  "description": "Goal tracking web application",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta1",
+    "bootstrap-icons": "^1.2.2",
+    "hover.css": "^2.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kwesi Bazil",
+  "license": "MIT"
+}
