@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--
-  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/node_modules/hover.css/css/hover-min.css">-->
+ <!-- <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/node_modules/hover.css/css/hover-min.css">  -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/hover-min.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -17,12 +16,11 @@
       <div class="container-fluid mx-lg-3">
         <!--NAVBAR BRAND-->
         <div class="col-4 col-md-3 ">
-          <span class="navbar-toggler-icon me-1"></span>
+          <span class="navbar-toggler-icon me-1" id="toggler-icon-modal"  ></span>
           <a class="navbar-brand "  href="#" id="company-logo">Logo
             <!--<img src="img/Logo Incrementum.png" alt="Incrementum" width="" height="40" class=" img-fluid d-inline-block align-top">-->
           </a>
         </div>
-
         <!--NAVBAR UTILITIES-->
         <div class=" d-flex col-8 col-md-9 col-lg-10">
           <div class="col-6 col-md-4 me-2">
@@ -30,7 +28,6 @@
               <input type="search" class="form-control form-control-sm no-glow  " id="nav-search" placeholder="search">
             </form>
           </div>
-
           <!--NAVBAR ICONS-->
           <div class="d-flex col-6 col-md-3 justify-content-end nav-icons">
             <a href="#" class="btn btn-sm no-glow">
@@ -53,9 +50,52 @@
       </div><!--container-fluid ends here-->
     </nav><!--Top navbar ends here-->
   </header>
-
+  
+  <!--Vertical Navbar Modal-->
+  <div id="myModal" class="modal-hide">
+    <div id="myModalDialog" class="modal-dialog-hide">
+      <div class="my-modal-content">
+        <div class="my-modal-header ">
+          <h3>Incrementum</h3>
+        </div>
+        <div class="my-modal-body ">
+          <nav class="navbar ">
+            <ul class="nav  flex-column w-100">
+              <li class="nav-item hvr-grow">
+                <a class="nav-link py-3 btn btn-block text-start ps-5 no-glow active-nav-icons" aria-current="page" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill mb-1 me-1" viewBox="0 0 16 16">
+                    <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+                  </svg> Dashboard
+                </a>
+              </li>
+              <li class="nav-item hvr-grow">
+                <a class="nav-link py-3 btn btn-block text-start ps-5 no-glow nav-icons" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flag-fill mb-1 me-2" viewBox="0 0 16 16">
+                    <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001"/>
+                  </svg>My Goals</a>
+              </li>
+              <li class="nav-item hvr-grow">
+                <a class="nav-link py-3 btn btn-block text-start ps-5 no-glow nav-icons" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots-fill mb-1 me-2" viewBox="0 0 16 16">
+                    <path d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                  </svg>Chat Room
+                </a>
+              </li>
+              <li class="nav-item hvr-grow">
+                <a class="nav-link py-3 btn btn-block text-start ps-5 no-glow nav-icons" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-fill mb-1 me-2" viewBox="0 0 16 16">
+                    <path d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2z"/>
+                  </svg>Statistics</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+    </div>
+    </div>
+  </div>
+  
   <!--Bottom Navbar-->
-  <nav class="navbar navbar-light border-top rounded-top d-md-none bg-light fixed-bottom">  <!---->
+  <nav class="navbar navbar-light border-top rounded-top d-md-none bg-light fixed-to-bottom">  <!---->
     <div class="container-fluid justify-content-evenly nav-icons ">
       <div class="col-3 hvr-grow hover-nav-icons">
         <a href="#" class="btn btn-sm no-glow ">
@@ -90,8 +130,8 @@
         </a>
       </div>
     </div><!--container-fluid ends here-->
-  </nav><!--bottom navbar ends here--> 
-  
+  </nav><!--bottom navbar ends here-->
+
   <script src="js/index.js"></script>
 </body>
 </html>

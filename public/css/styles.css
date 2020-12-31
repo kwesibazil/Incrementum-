@@ -1,3 +1,9 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body{
   min-width: 320px;
 }
@@ -7,37 +13,81 @@ body{
 #current-date{
   color:#30C3CD;
 }
-
-
 div.hover-nav-icons a span{
   font-size: .70rem;
 }
-
-
 .nav-icons svg{
   fill:#FF914D;
 }
-
+.active-nav-icons svg{
+  fill: #30c3cd;;
+}
 .hover-nav-icons:hover a svg,
 .hover-nav-icons:focus a svg,
 .hover-nav-icons:active a svg  
 {
   fill:  #30C3CD;
 }
-
-
 nav div.nav-icons svg.hvr-grow:hover{
-  /*fill:  #30C3CD;*/
+
   width: 20px;
   height: 20px;
 }
-
-
 .no-glow{
   box-shadow:none !important; 
   outline:​0px !important; 
 }
 header nav input.no-glow:focus{
   border: 1px solid #FF914D;
+}
+.fixed-to-bottom{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+}
+
+.modal-hide{
+  top: 0;
+  left: 0;
+  width: 0%; 
+  z-index: 1;
+  overflow: auto; 
+  position: fixed; 
+}.modal-show{
+  width: 100%; 
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: background-color 0.5s linear;
+}
+
+.modal-dialog-hide{
+  width: 250px;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  transition: width 0.3s linear; /*remove modal time*/
+  background-color: #f7f7f7;
+  transform: translate(-100%);
+  transition: 0.5s;
+}
+
+
+.modal-dialog-show{
+  transform: translate(0);
+  transition: 0.5s;
+}
+.my-modal-header{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.my-modal-header h3{
+  font-size: 1.2rem;
+  color: black;
+  padding: 15px;
+  padding-bottom: 0px;
+}
+.my-modal-body{
+  height: 100%;
 }
 
