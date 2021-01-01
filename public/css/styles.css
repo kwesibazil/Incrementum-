@@ -19,8 +19,9 @@ div.hover-nav-icons a span{
 .nav-icons svg{
   fill:#FF914D;
 }
-.active-nav-icons svg{
-  fill: #30c3cd;;
+
+.my-modal-body li:hover svg,  .my-modal-body li:focus svg, .my-modal-body li:active svg{
+  fill: #30C3CD;
 }
 .hover-nav-icons:hover a svg,
 .hover-nav-icons:focus a svg,
@@ -64,7 +65,7 @@ header nav input.no-glow:focus{
 .modal-dialog-hide{
   width: 250px;
   height: 100%;
-  overflow: auto;
+  /*overflow: auto;*/
   position: fixed;
   transition: width 0.3s linear; /*remove modal time*/
   background-color: #f7f7f7;
@@ -72,22 +73,35 @@ header nav input.no-glow:focus{
   transition: 0.5s;
 }
 
-
+.my-modal-content{
+  height: 100%;
+}
 .modal-dialog-show{
   transform: translate(0);
   transition: 0.5s;
 }
-.my-modal-header{
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+.my-modal-header h3{
+  margin: 0;
 }
 
 .my-modal-header h3{
   font-size: 1.2rem;
   color: black;
-  padding: 15px;
+  
   padding-bottom: 0px;
 }
 .my-modal-body{
   height: 100%;
 }
 
+/*
+.active-nav-icons:hover{
+  fill: #30c3cd;
+  background-color: #30C3CD;
+}
+*/
+/*
+.active-nav-icons:focus svg{
+  fill: #30c3cd;;
+}
+*/

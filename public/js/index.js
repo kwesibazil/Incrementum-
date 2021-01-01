@@ -10,11 +10,8 @@ toggleBtn.addEventListener('click', () => {
 
 
 modal.addEventListener('click', (e) => {
-  modalDialog.classList.remove("modal-dialog-show");
-  modal.classList.remove("modal-show");
-
-  // setTimeout(() => {
-  //   modal.classList.remove("modal-show");
-  // }, 200);
- /**/
+  if(e.target == modal){
+    modalDialog.classList.remove("modal-dialog-show");
+    modal.classList.remove("modal-show");
+  }
 });
