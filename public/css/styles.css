@@ -94,6 +94,18 @@ header nav input.no-glow:focus{
   height: 100%;
 }
 
+.glider{
+  height: auto;
+}
+
+.card-content{
+  /*width: 170px;*/ /*the width is control in the js*/
+  height: 130px;
+  border: 1px solid #F3F3F3;
+  background-color: #F3F3F3;
+}
+
+
 /*
 .active-nav-icons:hover{
   fill: #30c3cd;
