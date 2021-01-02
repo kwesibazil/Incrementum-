@@ -1,7 +1,7 @@
 *{
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
 }
 
 body{
@@ -94,17 +94,15 @@ header nav input.no-glow:focus{
   height: 100%;
 }
 
-.glider{
-  height: auto;
-}
-
 .card-content{
   /*width: 170px;*/ /*the width is control in the js*/
-  height: 130px;
-  border: 1px solid #F3F3F3;
-  background-color: #F3F3F3;
+   height: 70px; 
 }
 
+
+.main-content{
+  background-color: #DBE8F9;
+}
 
 /*
 .active-nav-icons:hover{
