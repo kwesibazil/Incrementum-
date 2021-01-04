@@ -20,38 +20,32 @@ new Glider(document.querySelector('.glider'), {
   draggable: true
 });
 
-
-
-// Load the Visualization API and the corechart package.
-google.charts.load('current', {'packages':['corechart']});
-
-// Set a callback to run when the Google Visualization API is loaded.
+google.charts.load("current", {packages:['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 
-// Callback that creates and populates a data table,
-// instantiates the pie chart, passes in the data and
-// draws it.
 function drawChart() {
-
-  // Create the data table.
-  var data = new google.visualization.DataTable();
-  data.addColumn('string', 'Topping');
-  data.addColumn('number', 'Slices');
-  data.addRows([
-    ['Mushrooms', 3],
-    ['Onions', 1],
-    ['Olives', 1],
-    ['Zucchini', 1],
-    ['Pepperoni', 2]
+  var data = google.visualization.arrayToDataTable([
+    ['Day', 'Goal', { role: "style" }],
+    ['Sun',  5, 'color: #1D3D59; opacity: 0.8'],
+    ['Mon',  7, 'color: #1D3D59; opacity: 0.8'],
+    ['Tues', 15, 'color:#1D3D59; opacity: 0.8'],
+    ['Wed',  5, 'color: #1D3D59; opacity: 0.8'],
+    ['Thur', 2, 'color: #1D3D59; opacity: 0.8'],
+    ['Fri',  10, 'color:#1D3D59; opacity: 0.8'],
+    ['Sat',  5, 'color: #1D3D59; opacity: 0.8']
   ]);
 
-  // Set chart options
-  var options = {'title':'How Much Pizza I Ate Last Night',
-                'width':400,
-                'height':300};
-
-  // Instantiate and draw our chart, passing in some options.
-  var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+  var options = {
+    bar: {groupWidth: "70%"},
+    chartArea:{
+      // left:5,
+      top: 15,
+      bottom: 16,
+      right: 5,
+      width: '90%'
+    }
+  };
+  var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
   chart.draw(data, options);
 }
 

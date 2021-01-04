@@ -1,8 +1,22 @@
 *{
   box-sizing: border-box;
-  /* margin: 0;
-  padding: 0; */
+   margin: 0;
+  padding: 0; 
 }
+
+.bg-first{
+  background-color: #FF914D;
+}
+.bg-second{
+  background-color: #30c3cd;
+}
+.bg-third{
+  background-color: #F3B800;
+}
+.bg-fourth{
+  background-color:  #508104;;
+}
+
 
 body{
   min-width: 320px;
@@ -87,31 +101,25 @@ header nav input.no-glow:focus{
 .my-modal-header h3{
   font-size: 1.2rem;
   color: black;
-  
   padding-bottom: 0px;
 }
 .my-modal-body{
   height: 100%;
 }
 
+
+
 .card-content{
   /*width: 170px;*/ /*the width is control in the js*/
-   height: 70px; 
+  height: 80px; 
+  /* background-color: #1D3D59; */
 }
 
 
-.main-content{
-  background-color: #DBE8F9;
+.section-heading{
+  padding-top: 10px;
+  margin-bottom: 5px;
+  font-size: .95rem;
+  font-weight: bold;
+  color:#1D3D59;
 }
-
-/*
-.active-nav-icons:hover{
-  fill: #30c3cd;
-  background-color: #30C3CD;
-}
-*/
-/*
-.active-nav-icons:focus svg{
-  fill: #30c3cd;;
-}
-*/

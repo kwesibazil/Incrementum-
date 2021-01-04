@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/glider.min.css">
   <link rel="stylesheet" href="css/hover-min.css">
   <link rel="stylesheet" href="css/styles.css">
-  
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <title>Index</title>
 </head>
 <body>
@@ -53,175 +53,201 @@
     </nav><!--Top navbar ends here-->
   </header>
 
-  <!--Main body content-->
-  <div class="container-fluid main-content">
-    <!--Slider container-->
+  <!--main-content-->
+  <div class="container-fluid p-2 main-content">
+    <!--slider-->
+    <section class="shadow p-3 pt-2 my-2 ">
+      <h2 class="section-heading">Daily Goals</h2>
+      <!--glider container-->
+      <div div class="glider-contain pb-1">
+      <div class="glider">
+        <div class="card me-2 mt-1 border-0 ">
+          <div class="card-body p-0 ">
+            <div class="card-content bg-third rounded">
+              
+            </div>
+          </div>
+        </div>
+        <div class="card me-2 mt-1 border-0 ">
+          <div class="card-body p-0 ">
+            <div class="card-content bg-third rounded">
+              
+            </div>
+          </div>
+        </div>
+        <div class="card me-2 mt-1 border-0 ">
+          <div class="card-body p-0 ">
+            <div class="card-content bg-third rounded">
+              
+            </div>
+          </div>
+        </div>
+        <div class="card me-2 mt-1 border-0 ">
+          <div class="card-body p-0 ">
+            <div class="card-content bg-third rounded">
 
-    <div class="glider-contain">
-      <div class="glider px-0 py-3">
-        <div class="card mx-2">
-          <div class="card-body p-0 border">
-            <div class="card-content ">
-              content here
-            </div>
-          </div>
-        </div>
-        <div class="card mx-2">
-          <div class="card-body p-0 border ">
-            <div class="card-content">
-              content here
-            </div>
-          </div>
-        </div>
-        <div class="card mx-2">
-          <div class="card-body p-0  border">
-            <div class="card-content ">
-              content here
             </div>
           </div>
         </div>
       </div><!--glider ends here-->
-    </div><!--glider-contain ends here-->
-    <!--Vertical Navbar Modal-->
+      </div><!--glider container ends here-->
+    </section>
 
-    <div id="chart_div"></div>
+    <!--Google chart-->
+    <section class="shadow p-3 pt-2 my-2">
+      <h2 class="section-heading">Statistics</h2>
+      <div dive id="columnchart_values" style="width: auto;"></div>
+    </section>
 
-
-
-
-    <div id="myModal" class="modal-hide ">
-      <div id="myModalDialog" class="modal-dialog-hide ">
-        <div class="my-modal-content">
-          <div class="my-modal-header border-bottom border-3 ">
-            <h3 class="text-center py-3 fs-3">Logo</h3>
-          </div><!--modal header ends here-->
-          <div class="my-modal-body"> 
-            <nav class="navbar ">
-              <ul class="nav  flex-column w-100 ">
-                <li class="nav-item  hvr-grow pt-3 nav-icons ">
-                  <a class="nav-link py-3 btn btn-block text-start ps-4 no-glow " aria-current="page" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill mb-1 me-3" viewBox="0 0 16 16">
-                      <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
-                    </svg> Dashboard
-                  </a>
-                </li>
-                <li class="nav-item hvr-grow">
-                  <a class="nav-link py-3 btn btn-block text-start ps-4 no-glow nav-icons" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flag-fill mb-1 me-3" viewBox="0 0 16 16">
-                      <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001"/>
-                    </svg>My Goals</a>
-                </li>
-                <li class="nav-item hvr-grow">
-                  <a class="nav-link py-3 btn btn-block text-start ps-4 no-glow nav-icons" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi mb-1 me-3 bi-calendar-minus-fill" viewBox="0 0 16 16">
-                      <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zM6 10h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1 0-1z"/>
-                    </svg>
-                    Calender
-                  </a>
-                </li>
-                <li class="nav-item hvr-grow">
-                  <a class="nav-link py-3 btn btn-block text-start ps-4 no-glow nav-icons" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-fill mb-1 me-3" viewBox="0 0 16 16">
-                      <path d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2z"/>
-                    </svg>Statistics</a>
-                </li>
-                <li class="nav-item hvr-grow">
-                  <a class="nav-link py-3 btn btn-block text-start ps-4 no-glow nav-icons" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots-fill mb-1 me-3" viewBox="0 0 16 16">
-                      <path d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                    </svg>Chat Room
-                  </a>
-                </li>
-                <li class="nav-item bg-primary fixed-to-bottom">
-                  <a class="nav-link py-3 fs-6 btn btn-block text-light text-start ps-4 no-glow" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-power mb-1 me-3" viewBox="0 0 16 16">
-                      <path d="M7.5 1v7h1V1h-1z"/>
-                      <path d="M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812z"/>
-                    </svg>Logout
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div><!--modal body ends here-->
-        </div><!--modal content ends here-->
-      </div> <!--modal dialog ends here-->
-    </div><!--modal container ends here-->
-    <!--Bottom Navbar-->
-
-    <nav class="navbar navbar-light border-top rounded-top d-md-none bg-light fixed-to-bottom">  <!---->
-      <div class="container-fluid justify-content-evenly nav-icons">
-        <div class="col-3 hvr-grow hover-nav-icons d-flex justify-content-center">
-          <a href="#" class="btn btn-sm no-glow ">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
-              <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
-            </svg>
-            <div>Dashboard</div>
-          </a>
+    <!--Milestones-->
+    <section class="shadow p-3 pt-2 my-2" style="height: 100px;">
+      <h2 class="section-heading">Weekly Milestones</h2>
+  
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+          </div>
         </div>
-        <div class="col-3 hvr-grow hover-nav-icons d-flex justify-content-center">
-          <a href="#" class="btn btn-sm no-glow ">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flag-fill" viewBox="0 0 16 16">
-              <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001"/>
-            </svg>
-            <div >MyGoal</div>
-          </a>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+          </div>
         </div>
-        <div class="col-3 hvr-grow hover-nav-icons d-flex justify-content-center">
-          <a href="#" class="btn btn-sm no-glow ">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
-              <path d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-            </svg>
-            <div>ChatRoom</div>
-          </a>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+          </div>
         </div>
-        <div class="col-3 hvr-grow hover-nav-icons d-flex justify-content-center">
-          <a href="#" class="btn btn-sm no-glow ">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-fill" viewBox="0 0 16 16">
-              <path d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2z"/>
-            </svg>
-            <div>Statistics</div>
-          </a>
-        </div>
-      </div><!--container-fluid ends here-->
-    </nav><!--bottom navbar ends here-->
-  </div><!--main content  ends here-->
+      </div>
+    </section>
+    
+  </div> <!--main-content ends here-->
 
 
+  
+  <!--Vertical Navbar Modal-->
+  <div id="myModal" class="modal-hide ">
+    <div id="myModalDialog" class="modal-dialog-hide ">
+      <div class="my-modal-content">
+        <div class="my-modal-header border-bottom border-3 ">
+          <h3 class="text-center py-3 fs-3">Logo</h3>
+        </div><!--modal header ends here-->
+        <div class="my-modal-body"> 
+          <nav class="navbar ">
+            <ul class="nav  flex-column w-100 ">
+              <li class="nav-item  hvr-grow pt-3 nav-icons ">
+                <a class="nav-link py-3 btn btn-block text-start ps-4 no-glow " aria-current="page" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill mb-1 me-3" viewBox="0 0 16 16">
+                    <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+                  </svg> Dashboard
+                </a>
+              </li>
+              <li class="nav-item hvr-grow">
+                <a class="nav-link py-3 btn btn-block text-start ps-4 no-glow nav-icons" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flag-fill mb-1 me-3" viewBox="0 0 16 16">
+                    <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001"/>
+                  </svg>My Goals</a>
+              </li>
+              <li class="nav-item hvr-grow">
+                <a class="nav-link py-3 btn btn-block text-start ps-4 no-glow nav-icons" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi mb-1 me-3 bi-calendar-minus-fill" viewBox="0 0 16 16">
+                    <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zM6 10h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1 0-1z"/>
+                  </svg>
+                  Calender
+                </a>
+              </li>
+              <li class="nav-item hvr-grow">
+                <a class="nav-link py-3 btn btn-block text-start ps-4 no-glow nav-icons" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-fill mb-1 me-3" viewBox="0 0 16 16">
+                    <path d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2z"/>
+                  </svg>Statistics</a>
+              </li>
+              <li class="nav-item hvr-grow">
+                <a class="nav-link py-3 btn btn-block text-start ps-4 no-glow nav-icons" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots-fill mb-1 me-3" viewBox="0 0 16 16">
+                    <path d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                  </svg>Chat Room
+                </a>
+              </li>
+              <li class="nav-item bg-primary fixed-to-bottom">
+                <a class="nav-link py-3 fs-6 btn btn-block text-light text-start ps-4 no-glow" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-power mb-1 me-3" viewBox="0 0 16 16">
+                    <path d="M7.5 1v7h1V1h-1z"/>
+                    <path d="M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812z"/>
+                  </svg>Logout
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div><!--modal body ends here-->
+      </div><!--modal content ends here-->
+    </div> <!--modal dialog ends here-->
+  </div><!--modal container ends here-->
+  
+  <!--Bottom Navbar-->
+  <nav class="navbar navbar-light border-top rounded-top d-md-none bg-light fixed-to-bottom">  <!---->
+    <div class="container-fluid justify-content-evenly nav-icons">
+      <div class="col-3 hvr-grow hover-nav-icons d-flex justify-content-center">
+        <a href="#" class="btn btn-sm no-glow ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+            <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+          </svg>
+          <div>Dashboard</div>
+        </a>
+      </div>
+      <div class="col-3 hvr-grow hover-nav-icons d-flex justify-content-center">
+        <a href="#" class="btn btn-sm no-glow ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flag-fill" viewBox="0 0 16 16">
+            <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001"/>
+          </svg>
+          <div >MyGoal</div>
+        </a>
+      </div>
+      <div class="col-3 hvr-grow hover-nav-icons d-flex justify-content-center">
+        <a href="#" class="btn btn-sm no-glow ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
+            <path d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+          </svg>
+          <div>ChatRoom</div>
+        </a>
+      </div>
+      <div class="col-3 hvr-grow hover-nav-icons d-flex justify-content-center">
+        <a href="#" class="btn btn-sm no-glow ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-fill" viewBox="0 0 16 16">
+            <path d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2z"/>
+          </svg>
+          <div>Statistics</div>
+        </a>
+      </div>
+    </div><!--container-fluid ends here-->
+  </nav><!--bottom navbar ends here-->
+<!--</div>main content  ends here-->
 
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script src="js/glider.js"></script>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/glider.min.js"></script>
   <script src="js/index.js"></script>
 </body>
 </html>
 
 
 
-<!--
 
 
   
-  <div class="glider-contain ">
-    <h1>Recently added</h1>
-    <div class="glider p-0 border">
-      <div class="card border-0">
-        <div class="card-body p-1">
-          <div class="card-content"></div>
-        </div>
-      </div>
-      <div class="card border-0">
-        <div class="card-body p-1">
-          <div class="card-content"></div>
-        </div>
-      </div>
-      <div class="card border-0">
-        <div class="card-body p-1">
-          <div class="card-content"></div>
-        </div>
-      </div>
-      </div>
-    
-    </div>
-  </div>
-
-
--->
