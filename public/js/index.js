@@ -28,7 +28,7 @@ function drawChart() {
     ['Day', 'Goal', { role: "style" }],
     ['Sun',  5, 'color: #1D3D59; opacity: 0.8'],
     ['Mon',  7, 'color: #1D3D59; opacity: 0.8'],
-    ['Tues', 15, 'color:#1D3D59; opacity: 0.8'],
+    ['Tue', 15, 'color:#1D3D59; opacity: 0.8'],
     ['Wed',  5, 'color: #1D3D59; opacity: 0.8'],
     ['Thur', 2, 'color: #1D3D59; opacity: 0.8'],
     ['Fri',  10, 'color:#1D3D59; opacity: 0.8'],
