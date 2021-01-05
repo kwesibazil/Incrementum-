@@ -4,6 +4,10 @@
   padding: 0; 
 }
 
+body{
+  min-width: 320px;
+}
+
 .bg-first{
   background-color: #FF914D;
 }
@@ -14,19 +18,21 @@
   background-color: #F3B800;
 }
 .bg-fourth{
-  background-color:  #508104;;
+  background-color:  #508104;
+}
+.bg-fifth{
+  background-color:  #1D3D59;
 }
 
 
-body{
-  min-width: 320px;
-}
 #company-logo, #current-date{
   font-size: .90rem;
 }
 #current-date{
   color:#30C3CD;
 }
+
+
 div.hover-nav-icons a span{
   font-size: .70rem;
 }
@@ -35,16 +41,15 @@ div.hover-nav-icons a span{
 }
 
 .my-modal-body li:hover svg,  .my-modal-body li:focus svg, .my-modal-body li:active svg{
-  fill: #30C3CD;
+  fill: #1D3D59;
 }
 .hover-nav-icons:hover a svg,
 .hover-nav-icons:focus a svg,
 .hover-nav-icons:active a svg  
 {
-  fill:  #30C3CD;
+  fill:  #1D3D59;
 }
 nav div.nav-icons svg.hvr-grow:hover{
-
   width: 20px;
   height: 20px;
 }
@@ -67,16 +72,16 @@ header nav input.no-glow:focus{
   top: 0;
   left: 0;
   width: 0%; 
-  z-index: 1;
+  z-index: 2;
   overflow: auto; 
   position: fixed; 
-}.modal-show{
+}
+.modal-show{
   width: 100%; 
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   transition: background-color 0.5s linear;
 }
-
 .modal-dialog-hide{
   width: 250px;
   height: 100%;
@@ -87,7 +92,6 @@ header nav input.no-glow:focus{
   transform: translate(-100%);
   transition: 0.5s;
 }
-
 .my-modal-content{
   height: 100%;
 }
@@ -98,7 +102,6 @@ header nav input.no-glow:focus{
 .my-modal-header h3{
   margin: 0;
 }
-
 .my-modal-header h3{
   font-size: 1.2rem;
   color: black;
@@ -108,14 +111,10 @@ header nav input.no-glow:focus{
   height: 100%;
 }
 
-
-
 .card-content{
   /*width: 170px;*/ /*the width is control in the js*/
   height: 80px; 
-  /* background-color: #1D3D59; */
 }
-
 
 .section-heading{
   padding-top: 10px;
@@ -125,6 +124,26 @@ header nav input.no-glow:focus{
   color:#1D3D59;
 }
 
+
+.action-btn-show{
+  width: 45px;
+  height: 45px;
+  z-index: 1;
+  right: 15px;
+  bottom: 75px;
+  position: fixed;
+  fill: #1d3d59d0; 
+  transition: height 0.4s;
+
+}
+
+.action-btn-hide{
+  height: 0;
+  transition: all 0.4s
+}
+
+
+/********* override bootstrap css*/
 .accordion-button:not(.collapsed) {
   color: #000000;
   background-color: #e7f1ff00;

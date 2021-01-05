@@ -1,6 +1,10 @@
-const toggleBtn = document.getElementById("toggler-icon-modal");
+let prevScroll = window.pageYOffset;
 const modal = document.getElementById("myModal");
-const modalDialog = document.getElementById("myModalDialog")
+const actionBtn = document.getElementById("action-btn");
+const modalDialog = document.getElementById("myModalDialog");
+const toggleBtn = document.getElementById("toggler-icon-modal");
+
+
 
 toggleBtn.addEventListener('click', () => {
   modal.classList.add("modal-show");
@@ -19,6 +23,22 @@ new Glider(document.querySelector('.glider'), {
   dots: '#dots',
   draggable: true
 });
+
+
+
+window.addEventListener('scroll', () => {
+  const currentPos = window.pageYOffset
+
+  if(prevScroll > currentPos)
+    actionBtn.classList.remove("action-btn-hide");  
+  else
+    actionBtn.classList.add("action-btn-hide");
+  
+  prevScroll = currentPos;
+});
+
+
+
 
 google.charts.load("current", {packages:['corechart']});
 google.charts.setOnLoadCallback(drawChart);
@@ -48,17 +68,6 @@ function drawChart() {
   var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
   chart.draw(data, options);
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
