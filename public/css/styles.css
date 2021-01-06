@@ -8,6 +8,7 @@ body{
   min-width: 320px;
 }
 
+
 .bg-first{
   background-color: #FF914D;
 }
@@ -47,7 +48,7 @@ div.hover-nav-icons a span{
 .hover-nav-icons:focus a svg,
 .hover-nav-icons:active a svg  
 {
-  fill:  #1D3D59;
+  fill:  #4da0ff;
 }
 nav div.nav-icons svg.hvr-grow:hover{
   width: 20px;
@@ -57,9 +58,11 @@ nav div.nav-icons svg.hvr-grow:hover{
   box-shadow:none !important; 
   outline:​0px !important; 
 }
-header nav input.no-glow:focus{
+input.no-glow:focus, textarea.no-glow:focus, select.no-glow:focus{
   border: 1px solid #FF914D;
 }
+
+
 
 .fixed-to-bottom{
   left: 0;
@@ -116,12 +119,26 @@ header nav input.no-glow:focus{
   height: 80px; 
 }
 
+.goal-content{
+  /*width: 170px;*/ /*the width is control in the js*/
+  height: 20px; 
+  opacity: 0.7;
+}
+
 .section-heading{
   padding-top: 10px;
   margin-bottom: 5px;
   font-size: .95rem;
   font-weight: bold;
   color:#1D3D59;
+}
+
+.progress{
+  height: 10px;
+}
+
+.progress div{
+  font-size: .50rem;
 }
 
 
@@ -133,6 +150,7 @@ header nav input.no-glow:focus{
   bottom: 75px;
   position: fixed;
   fill: #1d3d59d0; 
+  /* fill: #FF914D; */
   transition: height 0.4s;
 
 }
@@ -142,6 +160,15 @@ header nav input.no-glow:focus{
   transition: all 0.4s
 }
 
+
+
+.action-btn{
+  width: 0;
+  height: 0;
+  right: 15px;
+  bottom: 75px;
+  position: fixed;
+}
 
 /********* override bootstrap css*/
 .accordion-button:not(.collapsed) {
@@ -153,4 +180,9 @@ header nav input.no-glow:focus{
   z-index: 3;
   border-color: #a7a2a2a8; 
   outline: 0;
+}
+
+.kwesi{
+  height: 250px;
+  overflow: auto;
 }
